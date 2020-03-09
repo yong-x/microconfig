@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  application:
+    name: microcloud-config-client
+  profiles: dev
+server:
+  port: 8101
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-dev.com:7001/eureka
+---
+spring:
+  application:
+    name: microcloud-config-client
+  profiles: beta
+server:
+  port: 8102
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-beta.com:7001/eureka
+---
+
