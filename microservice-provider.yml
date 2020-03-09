@@ -1,12 +1,12 @@
 spring:
   profiles:
-    active: dept-8001
+    active: dept8001
 ---
 server:
   port: 8001
 
 spring:
-  profiles: dept-8001
+  profiles: dept8001
   datasource:
     username: xy
     password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
@@ -48,7 +48,7 @@ server:
   port: 8002
 
 spring:
-  profiles: dept-8002
+  profiles: dept8002
   datasource:
     username: xy
     password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
@@ -90,7 +90,7 @@ server:
   port: 8003
 
 spring:
-  profiles: dept-8003
+  profiles: dept8003
   datasource:
     username: xy
     password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
