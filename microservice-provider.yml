@@ -1,0 +1,130 @@
+spring:
+  profiles:
+    active: dept-8001
+---
+server:
+  port: 8001
+
+spring:
+  profiles: dept-8001
+  datasource:
+    username: xy
+    password: xy123456
+    url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+  application:
+    name: microserver-provider-dept
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapping/*.xml  
+  type-aliases-package: xy.pojo.Dept  
+  
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@eureka-7001.com:7001/eureka,http://admin:123456@eureka-7002.com:7002/eureka,http://admin:123456@eureka-7003.com:7003/eureka  
+  instance:
+    instance-id: dept-8001.com  
+    prefer-ip-address: true     
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 10
+
+
+info: 
+  app.name: microserver-provider-dept
+  company.name: www.xy.com
+  bulid.artifactId: $project.artifactId$  
+  bulid.version: $project.version$        
+---
+server:
+  port: 8002
+
+spring:
+  profiles: dept-8002
+  datasource:
+    username: xy
+    password: xy123456
+    url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+  application:
+    name: microserver-provider-dept
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapping/*.xml  
+  type-aliases-package: xy.pojo.Dept  
+  
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@eureka-7001.com:7001/eureka,http://admin:123456@eureka-7002.com:7002/eureka,http://admin:123456@eureka-7003.com:7003/eureka  
+  instance:
+    instance-id: dept-8002.com  
+    prefer-ip-address: true     
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 10
+
+
+info: 
+  app.name: microserver-provider-dept
+  company.name: www.xy.com
+  bulid.artifactId: $project.artifactId$  
+  bulid.version: $project.version$        
+---
+server:
+  port: 8003
+
+spring:
+  profiles: dept-8003
+  datasource:
+    username: xy
+    password: xy123456
+    url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+  application:
+    name: microserver-provider-dept
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapping/*.xml  
+  type-aliases-package: xy.pojo.Dept  
+  
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@eureka-7001.com:7001/eureka,http://admin:123456@eureka-7002.com:7002/eureka,http://admin:123456@eureka-7003.com:7003/eureka  
+  instance:
+    instance-id: dept-8003.com  
+    prefer-ip-address: true     
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 10
+
+
+info: 
+  app.name: microserver-provider-dept
+  company.name: www.xy.com
+  bulid.artifactId: $project.artifactId$  
+  bulid.version: $project.version$ 
+---

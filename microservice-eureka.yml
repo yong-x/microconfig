@@ -1,0 +1,77 @@
+spring:
+  profiles:
+    active: eureka-7001
+---
+server:
+  port: 7001
+  
+spring:
+  profiles: eureka-7001
+  application:
+    name: eureka-7001
+    
+eurekasecurity:
+  username: admin
+  password: 123456
+  
+eureka:
+  instance:
+    hostname: eureka-7001.com
+  server:
+    eviction-interval-timer-in-ms: 60000
+    enable-self-preservation: true 
+  client:
+    service-url:
+      defaultZone: http://admin:123456@eureka-7002.com:7002/eureka,http://admin:123456@eureka-7003.com:7003/eureka 
+    register-with-eureka: false           
+    fetch-registry: false  
+
+
+---
+server:
+  port: 7002
+  
+spring:
+  profiles: eureka-7002
+  application:
+    name: eureka-7002
+    
+eurekasecurity:
+  username: admin
+  password: 123456
+  
+eureka:
+  instance:
+    hostname: eureka-7002.com
+  server:
+    eviction-interval-timer-in-ms: 60000
+    enable-self-preservation: true 
+  client:
+    service-url:
+      defaultZone: http://admin:123456@eureka-7001.com:7001/eureka,http://admin:123456@eureka-7003.com:7003/eureka 
+    register-with-eureka: false           
+    fetch-registry: false  
+---
+server:
+  port: 7003
+  
+spring:
+  profiles: eureka-7003
+  application:
+    name: eureka-7003
+    
+eurekasecurity:
+  username: admin
+  password: 123456
+  
+eureka:
+  instance:
+    hostname: eureka-7003.com
+  server:
+    eviction-interval-timer-in-ms: 60000
+    enable-self-preservation: true 
+  client:
+    service-url:
+      defaultZone: http://admin:123456@eureka-7001.com:7001/eureka,http://admin:123456@eureka-7002.com:7002/eureka 
+    register-with-eureka: false           
+    fetch-registry: false
