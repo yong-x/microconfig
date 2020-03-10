@@ -9,7 +9,7 @@ spring:
   profiles: dept8001
   datasource:
     username: xy
-    password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
+    password: '{cipher}AQBPRtRTsdQLSXHcZTXqCKMrSbePwMT7JjOpYtbKkr06Gf9X7dmBvHmUT+aQUWjrwlfMstzS93Xr5bZf14VPxuTMFDdZWyXcXG7FmUBgdJtMe4/OYCeF0wghJCs53molD6XxwtZzNHzAK2Z8QaPpW8QgpYE0bESE+b7C7lQIpte4Ah1udIu6j55YUVcF1s+I//7Sf7m2bcFVIGiO/foU9OoGCAfJaR9mSabJkd8UJs0EbOLcuL0P5oZI6QNsQaDcCZn/N5nu0AbYioeAG6goxLVoodYuGq7ibR8BxB89jIclRtCn1I2QST0FCb9YuFAXEOsQsL66sjQNK8gRFNFRB70xRfQoXLpJbq+a2osEA3kerh8A3kGQCXeufIcjcub3GVQ='
     url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
@@ -51,7 +51,7 @@ spring:
   profiles: dept8002
   datasource:
     username: xy
-    password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
+    password: '{cipher}AQBPRtRTsdQLSXHcZTXqCKMrSbePwMT7JjOpYtbKkr06Gf9X7dmBvHmUT+aQUWjrwlfMstzS93Xr5bZf14VPxuTMFDdZWyXcXG7FmUBgdJtMe4/OYCeF0wghJCs53molD6XxwtZzNHzAK2Z8QaPpW8QgpYE0bESE+b7C7lQIpte4Ah1udIu6j55YUVcF1s+I//7Sf7m2bcFVIGiO/foU9OoGCAfJaR9mSabJkd8UJs0EbOLcuL0P5oZI6QNsQaDcCZn/N5nu0AbYioeAG6goxLVoodYuGq7ibR8BxB89jIclRtCn1I2QST0FCb9YuFAXEOsQsL66sjQNK8gRFNFRB70xRfQoXLpJbq+a2osEA3kerh8A3kGQCXeufIcjcub3GVQ='
     url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
@@ -93,7 +93,7 @@ spring:
   profiles: dept8003
   datasource:
     username: xy
-    password: '{cipher}72c02867284d5af6f7e16478fb120cf60366fbc57073a278b5e7121d09e6bae3'
+    password: '{cipher}AQBPRtRTsdQLSXHcZTXqCKMrSbePwMT7JjOpYtbKkr06Gf9X7dmBvHmUT+aQUWjrwlfMstzS93Xr5bZf14VPxuTMFDdZWyXcXG7FmUBgdJtMe4/OYCeF0wghJCs53molD6XxwtZzNHzAK2Z8QaPpW8QgpYE0bESE+b7C7lQIpte4Ah1udIu6j55YUVcF1s+I//7Sf7m2bcFVIGiO/foU9OoGCAfJaR9mSabJkd8UJs0EbOLcuL0P5oZI6QNsQaDcCZn/N5nu0AbYioeAG6goxLVoodYuGq7ibR8BxB89jIclRtCn1I2QST0FCb9YuFAXEOsQsL66sjQNK8gRFNFRB70xRfQoXLpJbq+a2osEA3kerh8A3kGQCXeufIcjcub3GVQ='
     url: jdbc:mysql://127.0.0.1:3306/mldn8001?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
